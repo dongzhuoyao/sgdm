@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <title>SILCO Project Page</title>
+  <title>Self-Guided Diffusion Models</title>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
 <meta property="og:image" content="images/cl.png"/>
@@ -47,37 +47,23 @@ BODY {
 <body>
 
 <div id="primarycontent">
-<center><h1>SILCO: Show a Few Images, Localize the Common Object</h1></center>
+<center><h1>Self-Guided Diffusion Models </h1></center>
 <center><h2>
-	<a href="http://taohu.me/">Tao HU</a>&nbsp;&nbsp;&nbsp;
-	<a href="https://staff.fnwi.uva.nl/p.s.m.mettes/">Pascal Mettes</a>&nbsp;&nbsp;&nbsp;
-	<a href="">Jia-Hong Huang </a>&nbsp;&nbsp;&nbsp;
+	<a href="http://taohu.me/">Vincent Tao HU</a>&nbsp;&nbsp;&nbsp;
+	<a href="">David W Zhang</a>&nbsp;&nbsp;&nbsp;
+	<a href="">Yuki M. Asano</a>&nbsp;&nbsp;&nbsp;
+	<a href="">Gertjan J. Burghouts</a>&nbsp;&nbsp;&nbsp;
 	<a href="http://www.ceessnoek.info/">Cees G. M. Snoek</a>&nbsp;&nbsp;&nbsp;
 	</h2>
 	<center><h2>
 		<a href="https://www.uva.nl/">University of Amsterdam</a>&nbsp;&nbsp;&nbsp;
 	</h2></center>
-<center><h2>in ICCV 2019</h2></center>
-<center><h2><strong><a href="http://taohu.me/note/19iccv-silco.pdf">Paper</a> |<a href="https://github.com/ta0hu/silco">Code</a>  </strong> </h2></center>
+<center><h2>in Arxiv</h2></center>
+<center><h2><strong><a href="">Paper</a> |<a href="">Code(WIP)</a>  </strong> </h2></center>
 
 
-<h2 align="center">Abstract</h2>
-
-<div style="font-size:14px"><p align="justify">Few-shot learning is a nascent research topic, motivated by the fact that traditional deep learning requires tremendous amounts of data. In this work, we propose a new task along this research direction, we call few-shot common-localization. Given a few weakly-supervised support images, we aim to localize the common object in the query image without any box annotation. This task differs from standard few-shot settings, since we aim to address the localization problem, rather than the global classification problem. To tackle this new problem, we propose a network that aims to get the most out of the support and query images. To that end, we introduce a spatial similarity module that searches the spatial commonality among the given images. We furthermore introduce a feature reweighting module, which balances the influence of different support images through graph convolutional networks. To evaluate few-shot common-localization, we repurpose and reorganize the well-known Pascal VOC and MS-COCO datasets, as well as a video dataset from Imagenet VID. Experimental evaluation on the new settings for few-shot common-localization shows the importance of searching for spatial similarity and feature reweighting, outperforming baselines from related tasks.</p></div>
-
-
-<br>
-<h1 align='center'> Brief Description of the Problem and Method </h1>
-<center><img src="images/cl.png" height="500"></center>
-<br style="clear:both" />
-<p align="justify"> Few-shot common-localization. Starting from a few weakly-supervised support images and a query image, we are able to localize the common object in the query image without the need for a single box annotation. Notice here, we only there is common object between support images and query image, while we don't know where and what the common object is.
-</p>
 
 <!--
-<center>
-<img src="images/nl_vis.png" width="75%"></center>
-<p></p>
--->
 
 <p>
 <table width="100%" border="0" cellspacing="0" cellpadding="10" >
@@ -94,73 +80,22 @@ BODY {
 </table>
 
 
-<!--
-<a href=""><img style="float: left; padding: 10px; PADDING-RIGHT: 30px;" alt="paper thumbnail" src="images/cover_meitu.jpg" width=210></a>
-
-
-
-<h2>Paper</h2>
-<p><a href="">arxiv</a>,  2019. </p>
-
-
-
-<h2>Citation</h2>
-<p>Tao HU, Pascal Mettes, Jia-Hong Huang, Cees G.M. Snoek<br>"SILCO: Show a Few Images, Localize the Common Object", in ICCV, 2019.
-<a href="silco.txt">Bibtex</a>
-
-
-</p>
-
-<h2>Code </h2> <p><a href=''> PyTorch </a></p>
--->
-
-<br>
-<!--
-<table border="0" cellspacing="0" cellpadding="10" width="100%">
-	<tr>
-	<td align="center" valign="middle" width="100%" class="full">
-		<h2>  Video of Interactive Demo App (GauGAN) </h2>
-		<p><iframe width="100%" height="500px" src="https://www.youtube.com/embed/MXWm6w4E5q0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-	</td>
-
-	</tr>
-</table>
--->
-
 
 
 <br>
-<h1 align='center'> Qualitative  Result </h1>
-<p align="justify">The bounding box and class label here are only used for illustration, we didn't utilize those informantion in our experiment. 
-</p>
-<center><img src="images/vis/vis_0_tvmonitor.jpg" width="1000"></center>
-<center><img src="images/vis/vis_1_motorbike.jpg" width="1000"></center>
-<center><img src="images/vis/vis_2_pottedplant.jpg" width="1000"></center>
-<center><img src="images/vis/vis_31_dog.jpg" width="1000"></center>
-<center><img src="images/vis/vis_45_person.jpg" width="1000"></center>
-
-<br>
 
 
-<h1 align='center'> Miscellaneous</h1>
 
-<!--<p align="justify"><a href="">Dataset Download</a> </p>-->
-<p align="justify"> <a href="voc.html">More Pascal VOC Success and failure cases</a>
-<p align="justify"> <a href="coco.html">More MS COCO Success and failure cases</a>
+
+
+
+
 
 
 <h1>Acknowledgement</h1>
 <p align="justify">This page style is borrowed from <a href="https://nvlabs.github.io/SPADE/">https://nvlabs.github.io/SPADE/</a>  </p>
 
-<br>
-<h1>Related Work</h1>
 
-<ul id='relatedwork'>
-<div align="left">
-<li font-size: 15px> Tao Hu, Pengwan Yang, Chiliang Zhang, Gang Yu, Yadong Mu, Cees G.M. Snoek <a href="https://www.aaai.org/ojs/index.php/AAAI/article/view/4860/4733"><strong>"Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation"</strong></a>, in AAAI 2019.
-</li>
-</div>
-</ul>
 
 
 
