@@ -1,0 +1,6 @@
+@inproceedings{hu2019silco,
+  title={{SILCO}: show a few images, localize the common object},
+  author={Tao HU and Pascal Mettes and Jia-Hong Huang and Cees G. M. Snoek},
+  booktitle={ICCV},
+  year={2019}
+}
